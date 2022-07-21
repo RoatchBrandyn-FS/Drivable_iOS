@@ -27,6 +27,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var passwordTF: UITextField!
     
     //Firebase Variables
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,12 +43,6 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         
     }
     
-    //MARK: Actions
-    @IBAction func signInPressed(_ sender: UIButton) {
-        
-        CheckText()
-        
-    }
     
 
     //MARK: Methods for Layout
@@ -116,6 +111,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
                 }
                 else{
                     print("Signed in Successful")
+                    print(Auth.auth().currentUser?.uid)
                 }
             }
             
@@ -136,6 +132,44 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         if self.view.frame.origin.y != 0 {
             self.view.frame.origin.y = 0
         }
+    }
+    
+    //MARK: Navigation
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        
+        if identifier == "SignInToDashboard"{
+            
+            CheckText()
+            
+            if Auth.auth().currentUser == nil {
+                return false
+            }
+            else{
+                return true
+            }
+        }
+        
+        else if identifier == "SignInToSignup" {
+            return true
+        }
+        else{
+            print("Error - No Matching Segue Identifier")
+            return false
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let s = sender as? UIButton {
+            
+            if s.currentTitle! == "Sign In" {
+                
+                let destination = segue.destination as? DashboardViewController
+                
+            }
+            
+        }
+        
     }
 
 }
