@@ -124,6 +124,7 @@ class DashboardViewController: UIViewController{
         totalActivesLabel.text = "\(totalActives)"
         totalInactivesLabel.text = "\(totalInactives)"
         
+        
     }
     
     //MARK: Methods for Firebase
@@ -131,6 +132,8 @@ class DashboardViewController: UIViewController{
     func ReadAccountDoc(){
         
         let db = Firestore.firestore()
+        vehicles.removeAll()
+        
         
         db.collection(firebase_collection_accounts).getDocuments { (snapshot, error) in
             
@@ -226,6 +229,10 @@ class DashboardViewController: UIViewController{
             return true
         }
         
+        else if identifier == "DashboardToProfile" {
+            return true
+        }
+        
         else{
             print("Error - No Matching Segue Identifier")
             return false
@@ -238,7 +245,20 @@ class DashboardViewController: UIViewController{
             
             if s.currentTitle! == "My FLeet" {
                 
-                let destination = segue.destination as? FleetListViewController
+                if let destination = segue.destination as? FleetListViewController{
+                    
+                    //destination.account = account
+                    
+                }
+                
+            }
+            
+        }
+        else if let s = sender as? UIBarButtonItem {
+            
+            if s.title == "Profile" {
+                
+                let destination = segue.destination as? ProfileViewController
                 
             }
             

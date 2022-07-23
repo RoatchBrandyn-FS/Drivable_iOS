@@ -46,10 +46,6 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
     
 
     //MARK: Methods for Layout
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
-    }
     
     func setCorners(){
         
@@ -120,6 +116,11 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
     }
     
     //MARK: Methods for handling Keyboard
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
     @objc func keyboardWillShow(notification: NSNotification) {
         if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
             if self.view.frame.origin.y == 0 {

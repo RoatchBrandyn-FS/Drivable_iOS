@@ -11,6 +11,9 @@
 		5DAA52B42888DAC900D78AFE /* UserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAA52B32888DAC900D78AFE /* UserAccount.swift */; };
 		5DAA52B72888FC3100D78AFE /* FleetListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAA52B62888FC3100D78AFE /* FleetListViewController.swift */; };
 		5DAA52BA288900B800D78AFE /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAA52B9288900B800D78AFE /* Vehicle.swift */; };
+		5DAA52BD288A290500D78AFE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAA52BC288A290500D78AFE /* ProfileViewController.swift */; };
+		5DAA52C1288B5ED900D78AFE /* VehicleDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAA52C0288B5ED900D78AFE /* VehicleDetailsViewController.swift */; };
+		5DAA52C4288BBD6800D78AFE /* AddVehicleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAA52C3288BBD6800D78AFE /* AddVehicleViewController.swift */; };
 		5DADD8FB2882318200F10D50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DADD8FA2882318200F10D50 /* AppDelegate.swift */; };
 		5DADD8FD2882318200F10D50 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DADD8FC2882318200F10D50 /* SceneDelegate.swift */; };
 		5DADD8FF2882318200F10D50 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DADD8FE2882318200F10D50 /* SignInViewController.swift */; };
@@ -33,6 +36,9 @@
 		5DAA52B32888DAC900D78AFE /* UserAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccount.swift; sourceTree = "<group>"; };
 		5DAA52B62888FC3100D78AFE /* FleetListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FleetListViewController.swift; sourceTree = "<group>"; };
 		5DAA52B9288900B800D78AFE /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		5DAA52BC288A290500D78AFE /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		5DAA52C0288B5ED900D78AFE /* VehicleDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDetailsViewController.swift; sourceTree = "<group>"; };
+		5DAA52C3288BBD6800D78AFE /* AddVehicleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVehicleViewController.swift; sourceTree = "<group>"; };
 		5DADD8F72882318200F10D50 /* Drivable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drivable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DADD8FA2882318200F10D50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DADD8FC2882318200F10D50 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +101,9 @@
 				5DAA52B32888DAC900D78AFE /* UserAccount.swift */,
 				5DAA52B62888FC3100D78AFE /* FleetListViewController.swift */,
 				5DAA52B9288900B800D78AFE /* Vehicle.swift */,
+				5DAA52BC288A290500D78AFE /* ProfileViewController.swift */,
+				5DAA52C0288B5ED900D78AFE /* VehicleDetailsViewController.swift */,
+				5DAA52C3288BBD6800D78AFE /* AddVehicleViewController.swift */,
 			);
 			path = Drivable;
 			sourceTree = "<group>";
@@ -183,11 +192,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DAA52BA288900B800D78AFE /* Vehicle.swift in Sources */,
+				5DAA52C4288BBD6800D78AFE /* AddVehicleViewController.swift in Sources */,
 				5DADD8FF2882318200F10D50 /* SignInViewController.swift in Sources */,
+				5DAA52C1288B5ED900D78AFE /* VehicleDetailsViewController.swift in Sources */,
 				5DADD8FB2882318200F10D50 /* AppDelegate.swift in Sources */,
 				5DAA52B42888DAC900D78AFE /* UserAccount.swift in Sources */,
 				5DAA52B72888FC3100D78AFE /* FleetListViewController.swift in Sources */,
 				5DAA52B12888D50200D78AFE /* DashboardViewController.swift in Sources */,
+				5DAA52BD288A290500D78AFE /* ProfileViewController.swift in Sources */,
 				5DADD912288235C100F10D50 /* SignupViewController.swift in Sources */,
 				5DADD8FD2882318200F10D50 /* SceneDelegate.swift in Sources */,
 			);
